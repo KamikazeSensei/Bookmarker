@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="main" class="vh-100 pt-4">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center my-4 w-auto">Bookmarker</h1>
+                <div id="input" class="py-4">
+                    <h3 class="text-center mt-2 mb-4"><i class="fa-solid fa-bookmark fs-4"></i> Bookmark your favourite
+                        sites <i class="fa-solid fa-bookmark fs-4"></i></h3>
+                    <div id="site_name">
+                        <i class="fa fa-book-bookmark"></i>
+                        <label for="site_name_input" class="mb-2 fw-bold ">Site Name</label>
+                        <input type="text" name="sitename" id="site_name_input" class="w-100 form-control"
+                            placeholder="Bookmark Name">
+                    </div>
+                    <div id="site_url">
+                        <i class="fa-solid fa-link"></i>
+                        <label for="site_url_input" class="mt-4 mb-2 fw-bold">Site URL</label>
+                        <input type="url" name="siteurl" id="site_url_input" class="w-100 form-control"
+                            placeholder="Website URL">
+                    </div>
+                    <button class="btn btn-danger text-center mt-3 mx-auto" id="submit_button"
+                        onclick="AddData()">Sumbit</button>
+                </div>
+
+            </div>
+            <table class="table text-center bg-light mt-3">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+
+                </thead>
+                <tbody id="table_content" class="text-center">
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
